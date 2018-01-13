@@ -24,7 +24,7 @@ namespace UTF8Problems
 
             var bytes = new byte[] { 195, 169 };
             var decoded = Encoding.UTF8.GetString(bytes);
-            
+
             Assert.Equal(character, decoded);
         }
 
