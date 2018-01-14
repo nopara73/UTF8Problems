@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Text;
 using Xunit;
 
@@ -9,7 +9,7 @@ namespace UTF8Problems
         [Fact]
         public void CanEncode()
         {
-            var character = "é";
+            var character = "Ã©";
             var encoded = Encoding.UTF8.GetBytes(character);
 
             var bytes = new byte[] { 195, 169 };
@@ -20,7 +20,7 @@ namespace UTF8Problems
         [Fact]
         public void CanDecode()
         {
-            var character = "é";
+            var character = "Ã©";
 
             var bytes = new byte[] { 195, 169 };
             var decoded = Encoding.UTF8.GetString(bytes);
@@ -31,7 +31,7 @@ namespace UTF8Problems
         [Fact]
         public void CanEncodeDecode()
         {
-            var character = "é";
+            var character = "Ã©";
             var encoded = Encoding.UTF8.GetBytes(character);
 
             var decoded = Encoding.UTF8.GetString(encoded);
