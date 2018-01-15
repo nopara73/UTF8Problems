@@ -19,7 +19,7 @@ namespace UTF8Problems
 
         [Fact]
         public void CanDecode()
-        {
+        { 
             var character = "é";
 
             var bytes = new byte[] { 195, 169 };
